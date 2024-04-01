@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip-Card</title>
+    <link rel="stylesheet" href="stylee.css">
+
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+    <div id ="card1">
+        <h1>PERSONAL DETAILS:</h1>
+        <h2>Name:Divyanshi Grover</h2>
+        <h2>Roll no:2002423</h2>
+        <h2>College:CEC</h2>
+        <h2>Github link:<a href="https://github.com/Divu1511" target="_main">Divu1511</a></h2>
+            </div>
+    </div>    
+    <div id="card-main">
+    <div id ="card" onmouseenter="play()" onmouseleave="pause()">
+        <div id="inner">
+            <div id="front"></div>
+            <div id="back">
+                <a href="#full"> 
+                    <img src="./images/div2.jpg" alt="">
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div id ="card" onmouseenter="play()" onmouseleave="pause()">
+        <div id="inner">
+            <div id="front"></div>
+            <div id="back">
+                <a href="#full"> 
+                    <img src="./images/div2.jpg" alt="">
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div id ="card" onmouseenter="play()" onmouseleave="pause()">
+        <div id="inner">
+            <div id="front"></div>
+            <div id="back">
+                <a href="#full2"> 
+                    <img src="./images/div2.jpg" alt="">
+                    </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="full">
+        <img src="./images/div2.jpg" alt="" srcset="">
+        <div class="close">
+            <a href="#"><button>X</button></a>
+        </div>
+    </div>
+    <div id="full2">
+        <img src="./images/divu.jpg" alt="" srcset="">
+        <div class="close">
+            <a href="#"><button>X</button></a>
+        </div>
+    </div>
+    <script>
+        const audio= new Audio('./swoosh-142322.mp3.mp3')
+        function play(){
+            audio.play()
+        }
+        function pause(){
+            audio.pause()
+        }
+
+    </script>
+</body>
+</html>
